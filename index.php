@@ -5,7 +5,7 @@ $username = "Mariq";
 echo $username." ";
 
 $age = 22.38 ;
-echo $age."<br>";
+echo $age;
 
 $bool = true;
 echo $bool."<br>";
