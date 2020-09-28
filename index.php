@@ -32,30 +32,49 @@
 //     echo $key." ". $biografiq."<br>";
 // }
 
-$ClassStartSad = 730;
-$ClassStart = 800;
-if ($ClassStartSad > $ClassStart)
+// $ClassStartSad = 730;
+// $ClassStart = 800;
+// if ($ClassStartSad > $ClassStart)
+// {
+//     echo "Inside";
+// }
+// elseif($ClassStartSad < $ClassStart)
+// {
+//     echo "Inside elseif";
+// }
+// else
+// {
+//     echo "Inside else";
+// }
+
+// switch ($ClassStart)
+// {
+// case $ClassStart > $ClassStartSad:
+//     echo "<br>"."Inside"."<br>";
+//     break ;
+// case $ClassStart < $ClassStartSad:
+//     echo "Inside elseif"."<br>";
+//     break;
+// default:
+//     echo "Match don't find";
+//     break;
+// }
+
+class Person
 {
-    echo "Inside";
-}
-elseif($ClassStartSad < $ClassStart)
-{
-    echo "Inside elseif";
-}
-else
-{
-    echo "Inside else";
+    public $username; #wytreshna prom.
+    public function __construct ($username) #construktor e tovva
+    {
+       $this->username =$username; #dostypvash neshto ot klasa,
+    }
+    public function PrintUserName() #public e vidimost
+    {
+        echo "This is my username:".$this->username;
+    }
+    
 }
 
-switch ($ClassStart)
-{
-case $ClassStart > $ClassStartSad:
-    echo "<br>"."Inside"."<br>";
-    break ;
-case $ClassStart < $ClassStartSad:
-    echo "Inside elseif"."<br>";
-    break;
-default:
-    echo "Match don't find";
-    break;
-}
+$Ivan = new Person("<br>"."Vanko1"); #instanciq,Vanko1 e username
+$Mariq = new Person("<br>"."Mariq1"); 
+$Ivan."<br>"->PrintUserName(); #Printusername e property na classa
+$Mariq->PrintUserName();
